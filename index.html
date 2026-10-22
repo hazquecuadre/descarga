@@ -1,22 +1,48 @@
-<!DOCTYPE html>
-<html lang="es-MX">
+<!doctype html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cuadre — Descárgala en el App Store</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Cuadre — La certeza de tu número.">
-<meta property="og:description" content="Descárgala en el App Store para iPhone, iPad y Mac. 14 días gratis.">
-<meta http-equiv="refresh" content="0;url=https://apps.apple.com/app/cuadre-obra-precios-unitarios/id6800192272">
+<title>CUADRE · Descarga</title>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2051416758821530');
+fbq('track', 'PageView');
+fbq('trackCustom', 'ClicDescarga');   // intención de descarga: vino a /descarga
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2051416758821530&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
+
+<script>
+// Destino: ficha de CUADRE con link de campaña de App Store Connect (campaña bio-ig).
+var DEST = "https://apps.apple.com/app/apple-store/id6800192272?pt=129286888&ct=bio-ig&mt=8";
+// Para probar el pixel sin que redirija: abre hazquecuadre.com/descarga/?test
+if (location.search.indexOf("test") === -1) {
+  setTimeout(function () { location.replace(DEST); }, 700);   // espera a que el pixel dispare
+}
+</script>
+<noscript><meta http-equiv="refresh" content="1;url=https://apps.apple.com/app/apple-store/id6800192272?pt=129286888&amp;ct=bio-ig&amp;mt=8"></noscript>
+
 <style>
-  body{font-family:'Mulish',-apple-system,'Helvetica Neue',sans-serif;background:#EDE7DD;color:#221C18;
-       display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;text-align:center}
-  a{color:#955A38;font-weight:800}
+  html,body{margin:0;height:100%;background:#EDE7DD;color:#221C18;
+    font-family:-apple-system,BlinkMacSystemFont,"Mulish","Helvetica Neue",Arial,sans-serif}
+  main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px}
+  p{margin:0;font-size:18px}
+  a{color:#955A38;font-weight:700}
 </style>
 </head>
 <body>
-<p>Llevándote al App Store…<br>
-<a href="https://apps.apple.com/app/cuadre-obra-precios-unitarios/id6800192272">Si no abre solo, toca aquí.</a></p>
-<script>location.replace("https://apps.apple.com/app/cuadre-obra-precios-unitarios/id6800192272");</script>
+<main>
+  <p>Abriendo el App Store…</p>
+  <p><a id="go" href="https://apps.apple.com/app/apple-store/id6800192272?pt=129286888&ct=bio-ig&mt=8">Toca aquí si no se abre</a></p>
+</main>
 </body>
 </html>
